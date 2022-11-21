@@ -12,9 +12,9 @@
 #include <FastLED.h>
 ​
 #define BUTTON_ONE_LED_PIN 14// 9//right
-#define BUTTON_TWO_LED_PIN 15// 11 //left
-#define BUTTON_ONE_PIN 16 //10 //left
-#define BUTTON_TWO_PIN 17// 12//right
+#define BUTTON_TWO_LED_PIN 16// 11 //left
+#define BUTTON_ONE_PIN 16 //15 //left
+#define BUTTON_TWO_PIN 17// 17//right
 EasyButton button1(BUTTON_ONE_PIN);
 EasyButton button2(BUTTON_TWO_PIN);
 ​
@@ -76,9 +76,9 @@ digitalWrite(BUTTON_TWO_LED_PIN, HIGH);
   FastLED.addLeds<WS2811, 6>(leds[4], NUM_LEDS_PER_STRIP);
   FastLED.addLeds<WS2811, 7>(leds[5], NUM_LEDS_PER_STRIP);
   FastLED.addLeds<WS2811, 8>(leds[6], NUM_LEDS_PER_STRIP);
-  FastLED.addLeds<WS2811, 9>(leds[6], NUM_LEDS_PER_STRIP);
-  FastLED.addLeds<WS2811, 10>(leds[6], NUM_LEDS_PER_STRIP);
-  FastLED.addLeds<WS2811, 11>(leds[6], NUM_LEDS_PER_STRIP);
+  FastLED.addLeds<WS2811, 9>(leds[7], NUM_LEDS_PER_STRIP);
+  FastLED.addLeds<WS2811, 10>(leds[8], NUM_LEDS_PER_STRIP);
+  FastLED.addLeds<WS2811, 11>(leds[9], NUM_LEDS_PER_STRIP);
 ​
  // Initialize the button1
   button1.begin();
